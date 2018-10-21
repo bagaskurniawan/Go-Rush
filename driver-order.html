@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Driver - Order</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img class="img-fluid rounded mx-auto d-block" src="pictures/profilepic.png">
+                <h5 class="text-center" id="hello">Hello,</h5>
+                <h5 class="text-center" id="name">Bagas Kurniawan</h5>
+                <strong class="text-center">Hello,</strong>
+                <strong class="text-center name">Bagas Kurniawan</strong>
+            </div> 
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="maps.html">
+                        <img src="pictures/helmet.png" class="navicon img-fluid">
+                        Order
+                    </a>
+                </li>
+                <li class="">
+                    <a href="editProfile.html">
+                        <img src="pictures/man.png" class="navicon img-fluid">
+                        Edit Your Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="History.html">
+                        <img src="pictures/history.png" class="navicon img-fluid">
+                        Order History
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="pictures/logout.png" class="navicon img-fluid">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled" id="editBar">
+            </ul>
+        </nav>
+
+
+        <!-- Ini yang buat order-->
+        <div class="container-fluid">
+                <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                    </div>
+
+        <div class="card-content">
+            <h3 class="card-title">Incoming Order!</h3>
+            <div class="card d-flex cust-wrapper">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="pictures/profilepic.png" class="cust-img">
+                    <h5 id="passenger">Bagas Kurniawan</h5>
+                    <hr id="line" class="lineMargin">
+                    <h5 class="align-self-start">Fare : Rp 20.000,-</h5>
+                    <hr id="line" class="lineMargin">
+
+                    <div class="align-self-start">
+                            <img class="img-fluid" src="pictures/blue.png" id="location">
+                            <h8 id="text">Bina Nusantara Computer Club</h8>   
+                    </div>
+                   
+                    <div class="align-self-start">
+                            <img class="img-fluid" src="pictures/dot.png" id="otwDot">
+                    </div>
+                    <div class="align-self-start">
+                            <img class="img-fluid" src="pictures/dot.png" id="otwDot">
+                    </div>
+
+                    <div class="align-self-start">
+                            <img class="img-fluid" src="pictures/red.png" id="location">
+                            <h8 id="text">Gojek Indonesia</h8>
+                    </div>
+                    <hr id="line" class="lineMargin">
+                    
+                    <button>Accept</button>
+                    
+                </div>
+             
+            </div>
+        </div>
+     </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

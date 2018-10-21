@@ -1,0 +1,488 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: background-color: #F0F0F0 !important;;
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #05172d;
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+#sidebar.active .sidebar-header h5,
+#sidebar.active .CTAs {
+    display: none;
+}
+#sidebar.active .sidebar-header strong {
+    display: inline-block;
+}
+#sidebar ul li a {
+    text-align: left;
+}
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+}
+#sidebar.active ul li a img {
+    width: 50%;
+    margin-left: 13px;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #05172d;
+}
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 0.6em;
+}
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #05172d;
+}
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #ffcc00;
+}
+.navicon{
+    width: 12%;
+    margin-right: 2vw;
+}
+.name{
+    margin-left: -7px;
+    color:#ffcc00;
+}
+#name{
+    color:#ffcc00;
+}
+#hello{
+    margin-top: 10px;
+}
+.btn-info{
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+.btn-info:hover{
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+#sidebarCollapse:active{
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+/* ---------------------------------------------------
+     History STYLE
+----------------------------------------------------- */
+#content {
+    width: 100%;
+    min-height: 60vh;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+.card{
+    width: 80%; 
+    margin: 0 auto;
+}
+.card-header{
+    background-color: white; 
+    border:none;
+}
+hr{
+    border:solid 1px; 
+    margin-top: -9px;
+}
+.card-footer{
+    border: none; 
+    background-color: white; 
+    margin-top: -20px;
+}
+#buttonHistory{
+    color:#ffcc00; 
+    background-color:#05172d;
+    border:none; 
+    border-radius: 5px;
+    font-size: 20px;
+}
+#location{
+    width: 10%;
+}
+#dot{
+    width: 9%;
+    display: flex; 
+    flex-direction: column;
+}
+.dot{
+    margin-top: -48px
+}
+.destination{
+    margin-top: -40px
+}
+/* ---------------------------------------------------
+     Edit Profile STYLE
+----------------------------------------------------- */
+#editBar{
+    padding-top: 58px;
+}
+#editProfile{
+    margin-top: 10px; 
+    margin-left: 10px;
+}
+#colFormLabel{
+    width: 70%;
+}
+#editButton{
+    margin-top: 40px;
+}
+.editButton{
+    border-radius: 20px; 
+    font-size: 20px; 
+    color:#ffcc00;
+    background-color:#05172d; 
+    border:none;
+}
+/* ---------------------------------------------------
+     Map STYLE
+----------------------------------------------------- */
+#map{
+    height: 100vh;
+    width: 100%;
+}
+.order-map{
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+}
+.order-form{
+    align-self: center;
+    display: flex;
+    position: absolute;
+    margin-top: 60vh;
+    flex-direction: column;
+    font-family: "Titillium Web Semibold", sans-serif;
+    color: #05172d;
+    background-color: white;
+    width: 50vw;
+    height: 35vh;
+    box-shadow: 0px 10px 100px 0px #bab8b8; 
+    padding: 1vh 2vw;
+}
+.order-form form input{
+    border: 2px solid #05172d;
+    width: 100%;
+    height: 5vh;
+    font-family: "Titillium Web", sans-serif;
+    padding: 2vh 1vw;
+    font-size: 18px;
+    margin-bottom: 2vh;
+}
+.order-form button{
+    background-color: #05172d;
+    color: #ffcc00;
+    font-size: 20px;
+    border-radius: 30px;
+    min-width: 10vw;
+    max-width: 20vw;
+    height: 6vh;
+    border-color: #05172d;
+    margin: 0 auto;
+}
+.book-btn{
+    text-align: center;
+}
+.order-form h3{
+    font-size: 1.4em
+}
+.order-form h4{
+    font-size: 1.3em
+}
+#changemode-driving{
+    visibility: hidden;
+}
+/* ---------------------------------------------------
+     OTW STYLE and Driver-order Style
+----------------------------------------------------- */
+.card button{
+    background-color: #05172d;
+    color: #ffcc00;
+    font-size: 20px;
+    border-radius: 30px;
+    min-width: 10vw;
+    width: auto;
+    height: 6vh;
+    border-color: #05172d;
+    margin: 0 auto;
+    text-align: center;
+}
+.wrap{
+    height: auto;
+    box-shadow: 0px 0px 30px 0px lightgrey;
+    margin-top: 5vh;  
+}
+.card-content{
+    margin: 0 auto;
+    width: 45vw;
+}
+.card-content h3{
+    text-align: center;
+    margin-bottom: 0;
+}
+.header{
+    background-color: #05172d;
+    padding: 1vh 1vw;
+    margin-bottom: 2vh;
+}
+.cust-wrapper{
+    padding: 5vh 5vh;
+}
+.cust-img{
+    width: 30%;
+}
+#book{
+    color:#ffcc00;
+}
+#line{
+    border:solid 1px; 
+    width: 100%;
+}
+.ontheway img{
+    width: 8%;
+}
+#otw{
+    margin-left: 2vw
+}
+#location{
+    width: 8%;
+}
+#otwDot{
+    width:40%;
+}
+#text{
+    font-size: 2.2vh;
+    margin-left:2vw;
+}
+.lineMargin{
+    margin-top: 6px;
+}
+.dots{
+    margin-left: 0.4vw;
+}
+#passenger{
+    margin-top:2vh
+}
+/* ---------------------------------------------------
+     Login STYLE
+----------------------------------------------------- */
+
+.nav-item {
+    padding-left:30px;
+}
+
+.navbar img {
+    width:60px;
+    height:60px;
+}
+#rush-color {
+    color:#ffcc00;
+}
+
+#home-color{
+    color:#ffcc00;
+}
+
+#home-color:hover {
+    color: white;
+}
+
+#rider-color{
+    color:#ffcc00;
+}
+
+#rider-color:hover {
+    color: white;
+}
+
+#driver-color{
+    color:#ffcc00;
+}
+
+#driver-color:hover{
+    color: white;
+}
+
+.carousel-inner img {
+    margin:0;
+    width:1350px;
+    height:550px;
+}
+
+
+#picture-border-left {
+    height: 75px;
+    width:320px;
+}
+
+#picture-border-right{
+    height: 75px;
+    width:320px;
+}
+
+#driver-register{
+    margin-left :60px;
+    padding-right:65px;
+}
+
+.register-form {
+    margin:100px;
+}
+
+.second-testimoni {
+    /*margin-top:100px;*/
+    margin-bottom: 100px;
+}
+
+.testimoni-text {
+    margin-top:60px;
+}
+
+.register-driver-font {
+    margin-top:50px;
+    padding-bottom: 20px;
+}
+
+#already-account {
+    margin-top:20px;
+    padding-bottom: 20px;
+}
+
+#already-account a {
+    text-decoration: none;
+}
+
+#box-shadow {
+    box-shadow: 3px 3px 5px 2px #333;
+}
+
+#main-part {
+    background-color: white;
+}
+
+#testimoni-text {
+    margin-top:30px;
+}
+
+#second-picture-testimoni {
+    margin-top:85px;
+}
+
+.lead {
+    margin-top: 40px;
+}
+
+footer {
+    background-color:#05172c;
+    height:100px;
+}
+
+
+footer p {
+    color:#ffcc00;
+    padding-top:30px;
+}
+
+footer img {
+    margin:0;
+    width: 40px;
+    height: 40px;
+    margin-right:10px;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+    #sidebar .sidebar-header h5,
+    #sidebar .CTAs {
+        display: none;
+    }
+    #sidebar .sidebar-header strong {
+        display: block;
+    }
+    #sidebar ul li a {
+        padding: 20px 10px;
+    }
+    #sidebar ul li a img {
+        margin-right: 0;
+        display: block;
+        font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    .btn-info{
+        display:block;
+        background-color: #ffcc00;
+        border-color: #ffcc00;
+        color:#fff;
+    }
+    .card h5, .card button, .ontheway{
+        font-size: 2vh;
+    }
+    .cust-img{
+        width: 50%;
+    }
+    .header{
+        flex-direction: column;
+        font-size: 2vh;
+    }
+}
+@media (max-width: 575px) {
+    #colFormLabel{
+        margin-left: 73px;
+    }   
+    #exampleFormControlFile1{
+        margin-left: 100px;
+    }
+}
